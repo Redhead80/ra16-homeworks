@@ -1,7 +1,7 @@
 {
   "name": "ra16-portfolio",
   "version": "0.1.0",
-  "homepage": "https://pollyred.github.io/ra16-portfolio",
+  "homepage": "",
   "description": "",
   "private": true,
   "dependencies": {
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PollyRed/ra16-portfolio.git"
+    "url": ""
   },
   "eslintConfig": {
     "extends": [
