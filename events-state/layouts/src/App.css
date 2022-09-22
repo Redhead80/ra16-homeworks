@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/*SHOP CARDS*/
+
+.shop-card {
+  width: 320px;
+  padding: 20px;
+  text-align: center;
+  background-color: #F5F5F5;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.shop-card:hover {
+  transform: scale(1.03);
+}
+
+.shop-card h3 {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.shopCard-image {
+  width: 250px;
+  height: 250px;
+}
+
+.shopCard-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shopCard-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.shopCard-price {
+  color: #D53E2E;
+  font-size: 20px;
+}
+
+.shopCard-button {
+  color: #D53E2E;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid #D53E2E;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.shopCard-button:hover {
+  color: #fff;
+  background-color: #D53E2E;
+}
+
+.cards-view {
+  min-width: 300px;
+  margin: 20px auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+/*SHOP LIST*/
+
+.shop-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding-right: 20px;
+  background-color: #F5F5F5;
+}
+
+
+.shop-item h3 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
+.shopItem-image img {
+  width: 140px;
+  height: 143px;
+
+}
+
+.shopItem-price {
+  color: #D53E2E;
+}
+
+.shopItem-button {
+  color: #D53E2E;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid #D53E2E;
+  border-radius: 20px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.shopItem-button:hover {
+  color: #fff;
+  background-color: #D53E2E;
+}
+
+.list-view {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/*ICON SWITCH*/
+
+.switch-button-wrapper {
+  text-align: right;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+
+.switch-button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #696969;
+
+}
+
+.material-icons {
+  cursor: pointer;
+}
