@@ -1,0 +1,91 @@
+.news-categories {
+  display:flex;  
+  list-style:none;
+}
+
+.news {
+  list-style:none;
+}
+
+.space {
+  margin-right: 10px;
+}
+
+.courses {
+  display:flex;
+  list-style:none;
+}
+
+.tvs {
+  list-style:none;
+}
+
+.news-item {
+  display:flex;  
+  list-style:none;
+}
+
+.course-item {
+  display:flex;
+  margin: 10px;
+}
+
+.tv-item {
+  display:flex;
+  margin: 10px;
+}
+
+.visitings {
+  list-style:none;
+}
+
+.visit {
+  display:flex;
+}
+
+.visit-source {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.weather-image {
+  width: 48px;
+  height: 48px;
+}
+
+.weather {
+  display:flex;
+  margin-right: 10px;
+  max-width: 100px;
+}
+
+.broadcast {
+  display:flex;
+  margin-right: 10px;
+}
+
+.broadcast-image {
+  width: 18px;
+  height: 18px;
+}
+
+.search {
+  display:flex;
+  margin-right: 10px;
+  align-items: baseline;
+}
+
+.search-line {
+  height: 30px;
+  width: 800px;
+  margin-left: 20px;
+}
+
+.search-name {
+  color: red;
+}
+
+.search-categories {
+  display:flex;
+  list-style:none;
+}
