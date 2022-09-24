@@ -1,0 +1,92 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.training-list {
+  display: flex;
+  height: 100px;
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .labels {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.labeled-input {
+  display: flex;
+  height: 60px;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+label {
+  margin: 10px;
+}
+
+.submit-button {
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 37px;
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: rgb(155, 155, 155);
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.training-field {
+  margin-right: 73px;
+  margin-left: 22px;
+}
+
+.trainings {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 7px;
+  width: 420px;
+  min-height: 20px;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+button {
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: rgb(155, 155, 155);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+}
