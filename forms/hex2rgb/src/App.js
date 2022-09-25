@@ -3,7 +3,7 @@ import ConverterForm from './components/ConverterForm';
 
 function App() {
   return (
-    <ConverterForm></ConverterForm>
+    <ConverterForm/>
   );
 }
 

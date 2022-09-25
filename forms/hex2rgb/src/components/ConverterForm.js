@@ -17,6 +17,10 @@ function ConverterForm(props) {
       value: result ? `rgb(${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)})`
                     : "Ошибка!"
     }));
+
+    if (rgbColor.length !== 7) {
+      return; 
+    }
   };
 
   const handleColorChanged = (event) => {
