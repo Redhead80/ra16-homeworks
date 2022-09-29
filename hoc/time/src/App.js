@@ -1,5 +1,28 @@
 import React, {useState} from 'react';
 
+function DateTimePretty(Component) {
+    return class extends React.Component {
+        render() {
+          const currentDate = new Date();
+          const videoDate = new Date(this.props.date);
+          const dateDiff = currentDate.getTime() - videoDate.getTime();
+          let componentDate;
+    
+          if(dateDiff < 3600000) {
+            componentDate = `${Math.ceil(dateDiff / (60 * 1000))} минут назад`;
+          } else if(dateDiff < 86400000) {
+            componentDate = `${Math.ceil(dateDiff / (60 * 60 * 1000))} часов назад`;
+          } else {
+            componentDate = `${Math.ceil(dateDiff / (24 * 60 * 60 * 1000))} дней назад`;
+          }
+    
+          return <Component date={componentDate}/>
+        }
+    }
+}
+
+const PrettyDateTime = DateTimePretty(DateTime);
+
 function DateTime(props) {
     return (
         <p className="date">{props.date}</p>
@@ -10,7 +33,7 @@ function Video(props) {
     return (
         <div className="video">
             <iframe src={props.url} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <DateTime date={props.date} />
+            <PrettyDateTime date={props.date} />
         </div>
     )
 }
