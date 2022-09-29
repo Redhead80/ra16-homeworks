@@ -36,17 +36,42 @@ function Video(props) {
     )
 };
 
+function highlight(Component) {
+    return class extends React.Component {
+        render() {
+            if(this.props.views >= 1000) {
+                return (
+                    <Popular>
+                        <Component {...this.props}/>
+                    </Popular>
+                );
+            } else if(this.props.views < 100) {
+                return (
+                    <New>
+                        <Component {...this.props}/>
+                    </New>
+                );
+            }
+            
+            return <Component {...this.props}/>
+        }
+    }
+}
+
+const HighlightedVideo = highlight(Video);
+const HighlightedArticle = highlight(Article);
+
 function List(props) {
     return props.list.map(item => {
         switch (item.type) {
             case 'video':
                 return (
-                    <Video {...item} />
+                    <HighlightedVideo {...item} />
                 );
 
             case 'article':
                 return (
-                    <Article {...item} />
+                    <HighlightedArticle {...item} />
                 );
         }
     });
