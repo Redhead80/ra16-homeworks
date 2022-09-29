@@ -4,8 +4,8 @@ function Listing(props) {
   return (
     <div className="item-list">
       {items.map((item) => {
-        if (item.title) {
-          const title = item.title.length > 50 ? `${item.title.substring(0, 50)}...` : item.title;
+        if (item.state) {
+          const title = item.state.length > 50 ? `${item.state.substring(0, 50)}...` : item.state;
 
           let price;
           if (item.currency_code === 'USD') {
