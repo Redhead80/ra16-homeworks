@@ -1,10 +1,10 @@
-import './App.css';
-import StepsTracker from './components/StepsTracker';
+import "./App.css";
+import Steps from "./components/Steps";
+import data from "./data/data.json";
 
 function App() {
-  return (
-    <StepsTracker></StepsTracker>
-  );
+  const steps = JSON.parse(JSON.stringify(data));
+  return <Steps steps={steps} />;
 }
 
 export default App;
