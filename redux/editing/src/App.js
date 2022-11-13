@@ -1,12 +1,16 @@
-import { Container } from "react-bootstrap";
-import ServiceAdd from "./components/ServiceAdd";
-import ServiceList from "./components/ServiceList";
+import './App.css';
+import {Provider} from 'react-redux'
+import TodoHeader from "./features/TodoHeader";
+import {store} from './components/store'
+import TodoList from "./features/TodoList";
 
-export default function App() {
-  return (
-    <Container className="App">
-      <ServiceAdd />
-      <ServiceList />
-    </Container>
-  );
+function App() {
+    return (
+        <Provider store={store}>
+            <TodoHeader/>
+            <TodoList/>
+        </Provider>
+    );
 }
+
+export default App;
